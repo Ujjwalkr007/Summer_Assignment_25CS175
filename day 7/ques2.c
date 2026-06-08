@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int fibonacci(int n)
+{
+    if(n == 0)
+        return 0 ;
+
+    if (n == 1)
+        return 1;
+
+    return fibonacci (n - 1) + fiboonaci(n - 2);
+
+}
+
+int main()
+{
+    int n ;
+
+    printf("enter position:");
+    scanf("%d", &n);
+
+    printf("fibonacci term = %d", fibonacci(n));
+
+    return 0;
+}
